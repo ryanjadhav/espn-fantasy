@@ -58,6 +58,15 @@ python3 bin/espn_api.py check
 # OK: Your Team Name (2-0), pointsFor=276.92
 ```
 
+## Use as an agent skill
+
+The repo ships a [`SKILL.md`](SKILL.md) (name `espn-fantasy`) so an AI
+agent can discover and operate these scripts: when to use `espn_api.py` vs
+`espn_txn.py`, the required env vars, the `--dry-run`-first rule, and the
+cookie handling rules. To install it for your agent, clone this repo into
+your agent's skills directory (e.g. `~/.config/agent/skills/espn-fantasy`
+or wherever your agent loads skills from) and set the env vars above.
+
 ## Usage
 
 ### Reads — `bin/espn_api.py`
